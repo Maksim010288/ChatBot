@@ -46,6 +46,9 @@ public class ChatBot {
             return "Я впорядке, а ты как? - ";
         } else if (bot.asTheWeather(message)) {
             return "Погода сегодня прекрасная";
+        } else if (bot.whatCanYouDo(message)){
+            return "Я вмію розраховувати кількість місяців яка потрібна для покупки товару, " +
+                    "в залежності від того ким працюєш і який товар хочеш купити";
         }
 
         int professionSalary = find(message, professions);
